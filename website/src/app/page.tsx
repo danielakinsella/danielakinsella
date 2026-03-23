@@ -159,7 +159,7 @@ export default function Home() {
               Daniela Kinsella
             </h1>
             <p className="text-xl md:text-2xl text-ink-light mb-6 leading-relaxed">
-              Principal Software Engineer, System Architect &amp; AI Strategy Lead
+            Staff+ Software Engineer, System Architect &amp; AI Strategy Lead
             </p>
             <p className="text-lg text-ink-light mb-8 leading-relaxed max-w-lg">
               25+ years building, stabilizing, and modernizing complex distributed systems.

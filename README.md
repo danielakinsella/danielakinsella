@@ -1,6 +1,6 @@
 # Hi, I'm Daniela Kinsella
 
-**Principal Software Engineer | System Architect | AI Strategy Lead**
+**Staff+ Software Engineer | System Architect | AI Strategy Lead**
 
 I'm a principal-caliber engineering leader with 25+ years of experience building, stabilizing, and modernizing complex distributed systems. I combine deep architectural expertise with a founder's mindset to future-proof the health of mission-critical software.
 
