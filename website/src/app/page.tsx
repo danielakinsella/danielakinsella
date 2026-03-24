@@ -119,7 +119,7 @@ const familyMembers = [
   },
   {
     name: "Rasmus",
-    description: "Our Lagotto Romagnolo — an Italian water dog with endless energy and curls for days.",
+    description: "Our sweet boy and youngest member of the family.",
     images: [
       { src: "/images/rasmus-2.jpg", alt: "Rasmus the Lagotto Romagnolo" },
       { src: "/images/rasmus-1.jpg", alt: "Rasmus in the park" },
@@ -127,7 +127,7 @@ const familyMembers = [
   },
   {
     name: "Fred",
-    description: "A majestic Maine Coon who rules the household with a fluffy iron paw.",
+    description: "Very fluffy Maine Coon.",
     images: [
       { src: "/images/fred-portrait.jpg", alt: "Fred the Maine Coon" },
       { src: "/images/fred-rooftop.jpg", alt: "Fred on the rooftop" },
@@ -136,7 +136,7 @@ const familyMembers = [
   },
   {
     name: "Mojo",
-    description: "Our gray tabby — small but mighty, and always supervising.",
+    description: "Our gray tabby.",
     images: [
       { src: "/images/mojo-portrait.jpg", alt: "Mojo the tabby" },
       { src: "/images/fred-and-mojo.jpg", alt: "Fred and Mojo together" },
@@ -352,7 +352,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-ink mb-4">My Family</h2>
           <div className="w-16 h-1 bg-lavender rounded mb-4" />
           <p className="text-lg text-ink-light mb-10 max-w-2xl">
-            When I&apos;m not modernizing legacy systems, I&apos;m hanging out with my favorite crew.
+            I love my little family.
           </p>
           <div className="space-y-16">
             {familyMembers.map((member) => (
