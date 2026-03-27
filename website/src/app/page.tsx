@@ -226,7 +226,7 @@ export default function Home() {
                 { icon: "🏗️", title: "Legacy Modernizer", text: "Expert in reverse-engineering and modernizing 20+ year-old mission-critical systems with zero production downtime." },
                 { icon: "🤖", title: "GenAI Innovator", text: "Operationalizing AI strategies and implementing AI-agent workflows to accelerate engineering." },
                 { icon: "☁️", title: "Cloud Specialist", text: "Decoupling monoliths into resilient, event-driven AWS Serverless architectures." },
-                { icon: "🚀", title: "Founder Turned Engineer", text: "8 years as CEO gives me the ability to balance architectural health with business reality." },
+                { icon: "🚀", title: "Engineer Turned Founder", text: "8 years as CEO gives me the ability to balance tech with business reality." },
               ].map((item) => (
                 <div
                   key={item.title}
@@ -351,9 +351,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-ink mb-4">My Family</h2>
           <div className="w-16 h-1 bg-lavender rounded mb-4" />
-          <p className="text-lg text-ink-light mb-10 max-w-2xl">
-            I love my little family.
-          </p>
+          
           <div className="space-y-16">
             {familyMembers.map((member) => (
               <div key={member.name}>
@@ -385,10 +383,6 @@ export default function Home() {
           <div className="w-16 h-1 bg-coral rounded mb-10" />
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <p className="text-lg text-ink-light leading-relaxed mb-6">
-                Whether you&apos;re looking for a conference speaker, want to discuss a challenging
-                technical problem, or just want to say hi — I&apos;d love to hear from you.
-              </p>
               <p className="text-ink-light mb-2">
                 <span className="font-semibold text-ink">Location:</span> Jersey City, NJ
               </p>
@@ -443,7 +437,6 @@ export default function Home() {
                 {[
                   "Modernizing 20-Year-Old Systems Without Breaking Production",
                   "AI-Powered Engineering: From Hype to Real Workflows",
-                  "From Founder to Staff Engineer: Lessons in Both Directions",
                   "Serverless Architecture at Scale: Patterns That Actually Work",
                   "Building and Mentoring High-Performing Engineering Teams",
                 ].map((topic) => (
