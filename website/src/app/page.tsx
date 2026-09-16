@@ -5,15 +5,33 @@ const experiences = [
   {
     company: "The New York Times",
     location: "New York, NY",
-    title: "Staff Software Engineer, Enterprise Technology",
-    period: "Dec 2023 – Present",
+    title: "Principal Engineer · AI Automation & Agentic Systems",
+    period: "Aug 2026 – Present",
     description:
-      "Technical lead and primary architect for the modernization of the Publishing Technology division, stewarding the systems responsible for the nightly printing of the newspaper.",
+      "Senior technical engineer for AI business automation in Enterprise Technology. I architect and operate production platforms that turn scattered AI experiments into safe, observable and maintainable enterprise systems, and I set the engineering standards for the discipline.",
     highlights: [
-      "Architecting the replacement of 4 mission-critical legacy production systems (20+ years old) with resilient, cloud-native AWS Serverless solutions — zero production disruption.",
-      "Co-leading the Enterprise Technology GenAI initiative, designing AI-powered agentic workflows to accelerate complex system rewrites.",
-      "Driving event-driven architecture adoption and infrastructure modernization including Terraform upgrades and CI/CD migration.",
-      "Formally mentoring engineers across Finance, Delivery, and Product departments.",
+      "An AI solution catalog with guardrails, staging, observability, cost governance and a clear ownership and maintenance model, hardened for security, least-privilege access and auditability.",
+      "The technical standards and criteria for when a workflow must graduate from a personal-use agent to an enterprise-maintained system, plus the reference architectures and frameworks other engineers build on.",
+      "Applying agentic engineering to modernize critical legacy systems, packaged as reusable approaches other teams can adopt.",
+      "Growing engineers into agentic work through reference architectures, reusable plugins, office hours and hands-on training, and representing our engineering practice externally through talks and writing.",
+      "Foundation: a reusable email-to-data platform built as a Staff Engineer that now powers production and pilot deployments for five teams. Primary sponsor of our joint Experience-Based Acceleration with AWS, taking an AI-agent workflow from concept to working prototype in two days.",
+    ],
+    color: "bg-coral",
+  },
+  {
+    company: "The New York Times",
+    location: "New York, NY",
+    title: "Staff Software Engineer · Co-Lead, Enterprise GenAI Initiative",
+    period: "Dec 2023 – Aug 2026",
+    description:
+      "Enterprise Technology, supporting the systems behind the newspaper's nightly print production, and co-leading the Enterprise GenAI initiative.",
+    highlights: [
+      "Led replacement of 20+ year-old, undocumented print systems: reverse-engineered a third-party planner with no source access, defined architecture, and wrote much of the code. Coding agents cut the timeline nearly in half; we delivered in ~six months with zero production disruption, alongside two other replacements.",
+      "Drove Lambda and Terraform upgrades, shipped hundreds of PRs across 20+ releases and eight repositories in a year, and was first in Enterprise Tech to plan the CI/CD migration from Drone to GitHub Actions.",
+      "Among the first to test agentic coding; co-authored the guidelines that informed leadership's adoption decision; and co-designed engineering-wide agentic training, owning agent/subagent architecture and maintenance at scale.",
+      "Built a secure CI on-ramp for least-privilege, audit-trailed LLM access with per-run cost tracking, and operated agents for code review, issue resolution, documentation, and self-healing dependency maintenance.",
+      "Founded the email-to-data platform on AWS Bedrock and AgentCore; it spread to five teams in six months, and one newsroom workflow surfaced 21% more items than the manual process. At Maker Week, led an 11-person team on an AI-orchestrated change-management system.",
+      "Formally mentored engineers across multiple departments.",
     ],
     color: "bg-coral",
   },
@@ -84,7 +102,7 @@ const skillCategories = [
   },
   {
     title: "AI Enablement",
-    skills: ["MCP", "RAG", "Agentic Workflows", "LLM Integration", "Claude Code SDK", "AWS AgentCore", "AWS Bedrock"],
+    skills: ["MCP", "RAG", "Agentic Workflows", "LLM Integration", "Claude Code SDK", "Strands Agents", "AWS AgentCore", "AWS Bedrock"],
     color: "bg-teal/10 border-teal/30",
     dotColor: "bg-teal",
   },
@@ -96,7 +114,7 @@ const skillCategories = [
   },
   {
     title: "Infrastructure & CI/CD",
-    skills: ["Terraform", "GitHub Actions", "Drone", "CircleCI", "Fastly"],
+    skills: ["Terraform", "GitHub Actions", "HashiCorp Vault", "Drone", "CircleCI", "Fastly"],
     color: "bg-lavender/10 border-lavender/30",
     dotColor: "bg-lavender",
   },
@@ -159,7 +177,7 @@ export default function Home() {
               Daniela Kinsella
             </h1>
             <p className="text-xl md:text-2xl text-ink-light mb-6 leading-relaxed">
-            Staff+ Software Engineer, System Architect &amp; AI Strategy Lead
+            Principal Engineer · AI Automation &amp; Agentic Systems
             </p>
             <p className="text-lg text-ink-light mb-8 leading-relaxed max-w-lg">
               25+ years building, stabilizing, and modernizing complex distributed systems.
@@ -204,7 +222,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <p className="text-lg text-ink-light leading-relaxed mb-6">
-                I&apos;m a principal-caliber engineering leader who combines deep architectural
+                I&apos;m a Principal Engineer who combines deep architectural
                 expertise with a founder&apos;s mindset to future-proof the health of mission-critical
                 software. I&apos;ve spent my career at the intersection of legacy modernization,
                 cloud architecture, and emerging AI technologies.
@@ -274,7 +292,7 @@ export default function Home() {
           <div className="space-y-8">
             {experiences.map((exp) => (
               <div
-                key={exp.company}
+                key={`${exp.company}-${exp.period}`}
                 className="bg-white rounded-2xl p-8 shadow-sm border border-cream-dark hover:shadow-md transition-shadow"
               >
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
@@ -437,6 +455,7 @@ export default function Home() {
                 {[
                   "Modernizing 20-Year-Old Systems Without Breaking Production",
                   "AI-Powered Engineering: From Hype to Real Workflows",
+                  "From Founder to Principal Engineer: Lessons in Both Directions",
                   "Serverless Architecture at Scale: Patterns That Actually Work",
                   "Building and Mentoring High-Performing Engineering Teams",
                 ].map((topic) => (

@@ -8,13 +8,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Daniela Kinsella | Staff+ Software Engineer & Speaker",
+  title: "Daniela Kinsella | Principal Engineer & Speaker",
   description:
-    "Staff+ Software Engineer, System Architect, and AI Strategy Lead with 25+ years of experience. Currently at The New York Times. Available for speaking engagements.",
+    "Principal Engineer specializing in AI automation and agentic systems, with 25+ years of experience. Currently at The New York Times. Available for speaking engagements.",
   openGraph: {
-    title: "Daniela Kinsella | Staff+ Software Engineer & Speaker",
+    title: "Daniela Kinsella | Principal Engineer & Speaker",
     description:
-      "Staff+ Software Engineer, System Architect, and AI Strategy Lead with 25+ years of experience building and modernizing complex distributed systems.",
+      "Principal Engineer specializing in AI automation and agentic systems, with 25+ years of experience building and modernizing complex distributed systems.",
     type: "website",
     url: "https://danielakinsella.com",
   },
