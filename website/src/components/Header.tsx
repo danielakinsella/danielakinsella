@@ -3,10 +3,11 @@
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#about", label: "About" },
+  { href: "#story", label: "Story" },
+  { href: "#now", label: "Now" },
+  { href: "#speaking", label: "Speaking" },
   { href: "#experience", label: "Experience" },
-  { href: "#skills", label: "Skills" },
-  { href: "#family", label: "My Family" },
+  { href: "#family", label: "Family" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -14,34 +15,38 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-cream-dark">
-      <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a
-          href="#"
-          className="text-xl font-bold text-coral tracking-tight"
-        >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-ink/85 backdrop-blur-md border-b border-white/10">
+      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="#" className="font-black tracking-tight text-white">
           Daniela Kinsella
         </a>
 
-        {/* Desktop nav */}
-        <ul className="hidden md:flex gap-8">
+        <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-ink-light hover:text-coral transition-colors font-medium"
+                className="text-sm font-semibold text-muted hover:text-accent transition-colors"
               >
                 {link.label}
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="mailto:hello@danielakinsella.com"
+              className="text-sm font-bold px-4 py-2 rounded-full bg-accent text-ink hover:bg-white transition-colors"
+            >
+              Book me
+            </a>
+          </li>
         </ul>
 
-        {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-ink-light hover:text-coral transition-colors"
+          className="md:hidden p-2 text-muted hover:text-white transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
           {menuOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,21 +60,29 @@ export default function Header() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-cream border-t border-cream-dark">
+        <div className="md:hidden bg-ink border-t border-white/10">
           <ul className="flex flex-col px-6 py-4 gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-ink-light hover:text-coral transition-colors font-medium block"
+                  className="block text-lg font-bold text-white hover:text-accent transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="mailto:hello@danielakinsella.com"
+                className="inline-block font-bold px-5 py-2.5 rounded-full bg-accent text-ink"
+                onClick={() => setMenuOpen(false)}
+              >
+                Book me
+              </a>
+            </li>
           </ul>
         </div>
       )}
