@@ -453,12 +453,11 @@ export default function Home() {
       <section className="pt-16 min-h-screen flex items-center">
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-[1.15fr_0.85fr] gap-12 md:gap-16 items-center w-full">
           <div>
-            <p className="eyebrow mb-5">Daniela Kinsella</p>
-            <h1 className="text-5xl sm:text-6xl md:text-[5.25rem] font-black leading-[0.98] tracking-tight mb-3">
-              Principal Engineer
+            <h1 className="text-5xl sm:text-6xl md:text-[5.25rem] font-black leading-[0.98] tracking-tight mb-4">
+              Daniela Kinsella
             </h1>
             <p className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-accent mb-8">
-              The New York Times
+              Principal Engineer, The&nbsp;New&nbsp;York&nbsp;Times
             </p>
             <p className="text-xl sm:text-2xl md:text-3xl font-black leading-[1.15] tracking-tight mb-6 max-w-xl">
               Everyone is coding now. <span className="text-accent">I help make it grown-up.</span>
