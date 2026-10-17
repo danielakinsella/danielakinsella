@@ -453,7 +453,11 @@ export default function Home() {
       <section className="pt-16 min-h-screen flex items-center">
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-[1.15fr_0.85fr] gap-12 md:gap-16 items-center w-full">
           <div>
-            <p className="eyebrow mb-5">Principal Engineer · The New York Times</p>
+            <p className="text-xl md:text-2xl font-black tracking-tight mb-5">
+              <span className="text-accent">Principal Engineer</span>
+              <span className="text-dim mx-2.5">·</span>
+              <span className="text-muted">The New York Times</span>
+            </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-[1.02] tracking-tight mb-7">
               Everyone is coding now. <span className="text-accent">I help make it grown-up.</span>
             </h1>
