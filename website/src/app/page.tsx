@@ -449,36 +449,24 @@ export default function Home() {
       <Header />
       <main>
 
-      {/* Hero, after the deck's intro slide: name big, title quiet, portrait bleeding off the right edge */}
-      <section className="relative pt-16 md:min-h-screen md:flex md:items-center overflow-hidden">
-        <div className="relative w-full aspect-[4/5] sm:aspect-[4/3] md:absolute md:inset-y-0 md:right-0 md:w-[44vw] md:aspect-auto">
-          <Image
-            src="/images/story/portrait.jpg"
-            alt="Daniela Kinsella"
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 44vw"
-            className="object-cover object-top"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent md:bg-gradient-to-r md:from-ink md:via-transparent md:to-transparent md:w-24" />
-        </div>
-
-        <div className="max-w-6xl mx-auto px-6 w-full py-12 md:py-24">
-          <div className="md:w-[54%] md:pr-10">
-            <h1 className="text-5xl sm:text-6xl md:text-[5.25rem] font-black leading-[0.98] tracking-tight mb-5">
-              Daniela Kinsella
+      {/* Hero */}
+      <section className="pt-16 min-h-screen flex items-center">
+        <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-[1.15fr_0.85fr] gap-12 md:gap-16 items-center w-full">
+          <div>
+            <p className="eyebrow mb-5">Daniela Kinsella</p>
+            <h1 className="text-5xl sm:text-6xl md:text-[5.25rem] font-black leading-[0.98] tracking-tight mb-3">
+              Principal Engineer
             </h1>
-            <p className="text-lg md:text-xl font-bold text-muted mb-10">Principal Engineer, The New York Times</p>
-
-            <div className="w-16 h-1 bg-accent mb-8" />
-
-            <p className="text-2xl sm:text-3xl font-black leading-[1.15] tracking-tight mb-5 max-w-lg">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight tracking-tight text-accent mb-8">
+              The New York Times
+            </p>
+            <p className="text-xl sm:text-2xl md:text-3xl font-black leading-[1.15] tracking-tight mb-6 max-w-xl">
               Everyone is coding now. <span className="text-accent">I help make it grown-up.</span>
             </p>
-            <p className="text-base md:text-lg text-muted font-medium leading-relaxed max-w-lg mb-9">
-              Almost 30 years of writing software in Berlin and New York. On the AI Enablement team at The Times I help the
-              people who understand the work build their own tools, and I make sure those tools are stable, observable,
-              secure and governed.
+            <p className="text-lg md:text-xl text-muted font-medium leading-relaxed max-w-xl mb-9">
+              I&rsquo;ve been writing software for almost 30 years, in Berlin and New York. On the AI Enablement team
+              at The Times I help the people who understand the work build their own tools, and I make sure those tools
+              are stable, observable, secure and governed.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -493,6 +481,22 @@ export default function Home() {
               >
                 Read my story
               </a>
+            </div>
+          </div>
+          <div className="relative md:justify-self-end w-full max-w-sm md:max-w-md">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-sm">
+              <Image
+                src="/images/story/portrait.jpg"
+                alt="Daniela Kinsella"
+                fill
+                priority
+                sizes="(max-width: 768px) 90vw, 40vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-4 -left-4 bg-paper text-ink px-4 py-2 rounded-sm shadow-xl">
+              <p className="font-black leading-tight">Daniela Kinsella</p>
+              <p className="text-xs text-panel font-semibold">Principal Engineer · Jersey City, NJ</p>
             </div>
           </div>
         </div>
